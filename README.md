@@ -7,6 +7,9 @@ I'll write more markdown later.
 
 
 
-####DEUCES 
+####Contributors
+
+##TheInsaneGeekFreak
+##deep :p 
 
 

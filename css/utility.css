@@ -1,0 +1,41 @@
+#messageBox {
+	font-weight: bold;
+	background-color: #F9DF7D;
+	color: #3B3C3E;
+	font-size: 12px;
+	left: -1px;
+	height:70px;
+	margin-left: 300px;
+	margin-top: 2px;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	border-radius: 4px 0 4px 0;
+	width:500px;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+#clearMSGBox {
+  color:blue;
+  margin-left: 680px;
+  cursor: pointer;
+}
+
+#DivWithScroll{
+	font-weight: bold;
+	background-color: #F9DF7D;
+	color: #3B3C3E;
+	font-size: 12px;
+	left: -1px;
+	height:70px;
+	margin-left: 300px;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	border-radius: 4px 0 4px 0;
+	width:400px;
+	overflow:scroll;
+	overflow-x:hidden;
+}

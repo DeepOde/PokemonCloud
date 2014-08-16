@@ -1,0 +1,180 @@
+function PokeMove(moveId) {
+    this.moveAcc = moveAcc[moveId];
+    this.moveCriRat = moveCriRat[moveId];
+    this.moveDamageClass = moveDamgeClass[moveId];
+    this.moveEffectCaused = moveEffectCaused[moveId];
+    this.moveEffectChance = moveEffectChance[moveId];
+    this.moveFlinchChance = moveFlinchChance[moveId];
+    this.moveName = moveName[moveId];
+    this.movePower = movePower[moveId];
+    //this.movePP = movePP[moveId];
+    this.movePri = movePri[moveId];
+    this.moveRange = moveRange[moveId];
+    this.moveRecoil = moveRecoil[moveId];
+    this.moveType = moveTyoe[moveId];
+    this.moveFlag = moveFlag[moveId];
+}
+//
+
+function calcCalcSpeed(a, aside, b, bside) {
+    var calcSpeed = a.speed;
+    calcSpeed = applyMultiplier(a.speed, a.speedLev);
+    if ((a.hasStatus == 1) && (a.ability != 95)) {
+        calcSpeed = Math.round(calcSpeed/4);
+    }
+    if (a.item == /*choice scarf*/ ) {
+        calcSpeed = Math.round(calcSpeed*1.5);
+    }
+    if ((a.item == ) ||(a.item == ) ||(a.item == ) ||(a.item == ) ||(a.item == ) ||(a.item == ) ||(a.item == ) ||(a.item == )) {
+        calcSpeed = Math.round(calcSpeed/2);
+    }
+    if (aside.tailwind) {
+        calcSpeed = Math.round(calcSpeed*2);
+    }
+    if ((a.nid = 192) && (a.transformed == false) && (a.item == /*quick powder*/ )) {
+        calcSpeed = Math.round(calcSpeed*2);
+    }
+    if (((a.ability == ) && (weather == )) || ((a.ability == ) && (weather == )) || ((a.ability == ) && (weather == ))) {
+        calcSpeed = Math.round(calcSpeed*2);
+    } 
+    if ((a.ability == ) && (aside.items[selectedAt] != 0) && (a.item == 0)) {
+        calcSpeed = Math.round(calcSpeed*2);
+    }
+    if ((a.ability == ) && ((a.hasStatus == 1) || (a.hasStatus == 2) || (a.hasStatus == 3) || (a.hasStatus == 4) || (a.hasStatus == 5))) {
+        calcSpeed = Math.round(calcSpeed*1.5);
+    }
+    if (a.ability == /*slow start*/) {
+        /*yet to figure out <--------------------------------------------------------------------------------------------------------*/
+    }
+    return calcSpeed;
+}
+//
+function priLevel() {
+    var calcSpeed = user.speed;
+    var 
+    if (movePri[user.moveId] > movePri[foe.moveId]) {
+        return "u";                
+    }
+    else if (movePri[user.moveId] < movePri[foe.moveId]) {
+        return "f";
+    }
+    else { //same pri level
+        if ((user.item == 180) && (hasChance(20)) {
+          var actiQC_u = true;
+        } 
+        if ((foe.item == 180) && (hasChance(20)) {
+          var actiQC_f = true;
+        }
+        if ((user.item) == 366 && (user.hp <= ((sethp(user.baseHp, user.ivHp, user.evHp, user.level))/5))) {
+          consumeBerry(user);     
+          var actiCB_u = true;
+        } 
+        if ((foe.item) == 180 && (foe.hp <= ((sethp(foe.baseHp, foe.ivHp, foe.evHp, foe.level))/5))) {
+          consumeBerry(foe);
+          var actiCB_f = true;
+        }
+        if ((user.item == 11) || (user.item == 13)) {
+            var actiLT_u = true;
+        }
+        if ((foe.item == 11) || (foe.item == 13)) {
+            var actiLT_f = true;
+        }
+        if (user.ability == ) {
+            var actiStall_u = true;
+        }
+        if (foe.ability == ) {
+            var actiStall_f = true;
+        }
+        if ((actiQC_u) && (actiQC_f) {
+            if (user.speed > foe.speed) {
+                return "u";
+            }
+            else if (user.speed < foe.speed){
+                return"f";
+            }
+            else {
+                var randomvartoselspe = Math.floor(Math.random()*1);
+                if (randomvartoselspe == 0) {
+                    return "u";
+                } else {
+                    return "f";
+                }
+            }
+        }
+        else if (actiQC_u) {
+            return "u";
+        }
+        else if (actiQC_f) {
+            return "f";
+        }
+        if ((actiLT_u) && (actiLT_f) {
+            if (user.speed < foe.speed) {
+                return "u";
+            }
+            else if (user.speed > foe.speed){
+                return"f";
+            }
+            else {
+                var randomvartoselspe = Math.floor(Math.random()*1);
+                if (randomvartoselspe == 0) {
+                    return "u";
+                } else {
+                    return "f";
+                }
+            }
+        }
+        else if (actiLT_f) {
+            return "u";
+        }
+        else if (actiLT_u) {
+            return "f";
+        }
+        if ((actiStall_u) && (actiStall_f) {
+            if (user.speed < foe.speed) {
+                return "u";
+            }
+            else if (user.speed > foe.speed){
+                return"f";
+            }
+            else {
+                var randomvartoselspe = Math.floor(Math.random()*1);
+                if (randomvartoselspe == 0) {
+                    return "u";
+                } else {
+                    return "f";
+                }
+            }
+        }
+        else if (actiStall_u) {
+            return "f";
+        }
+        else if (actiStall_f) {
+            return "u";
+        }
+        if (user.speed > foe.speed) {
+            if (trickRoom) {
+                return "f";
+            }
+            else {
+                return "u";
+            }
+        }
+        else if (user.speed < foe.speed) {
+            if (trickRoom) {
+                return "u";
+            }
+            else {
+                return "f";
+            }
+        }
+        else if (user.speed == foe.speed) {
+            var randomvartoselspe = Math.floor(Math.random()*1);
+                if (randomvartoselspe == 0) {
+                    return "u";
+                } else {
+                    return "f";
+                }
+        }
+    }
+    return "u";
+} //priority level counting function ends here

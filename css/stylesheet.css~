@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'amplify';
+    src: url('/fonts/amplify_personaluseonly-webfont.eot');
+    src: url('/fonts/amplify_personaluseonly-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/amplify_personaluseonly-webfont.woff') format('woff'),
+         url('/fonts/amplify_personaluseonly-webfont.ttf') format('truetype'),
+         url('/fonts/amplify_personaluseonly-webfont.svg#amplify_personal_use_onlyRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

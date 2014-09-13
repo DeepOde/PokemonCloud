@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo</title>
+<!--Uniform Scripts-->
+<script src="lib/crafty.js"></script><noscript>You need to have JavaScript enabled in order to play this game.</noscript>
+<script src="lib/jquery.js"></script>
+<script src="main.js"></script>
+<script src="loader.js"></script>
+
+<!--Map Specific Scripts-->
+<script src="src/map1/scene_map1.js"></script>
+<script src="lib/map1/components_try.js"></script>
+
+<!--Local utility function script-->
+<script>
+
+  function loadEnter() {
+	putMessage("X Greed Box: "+getGreedValue(pl.x)+ "<br>Y Greed Box: "+getGreedValue(pl.y));
+  }
+  function clearMSGBox() {
+    document.getElementById("messageBox").innerHTML = "";
+  }
+  function putMessage(message, id) {
+    if (id === undefined) {
+      id = "messageBox";
+    }
+    document.getElementById(id).innerHTML = message;
+    setScrollBarAtBottom();
+  }
+  function setScrollBarAtBottom() {
+    var div = $("#messageBox");
+    div.scrollTop( div.get(0).scrollHeight ); //Thanks to stackoverflow for this :)! 
+  }
+  function getGreedValue(axeis) {
+    var greedBox =  Math.round(parseInt(axeis/32,10));
+	return greedBox;
+  }
+</script>
+
+<script>
+   //initalizes the game
+   window.addEventListener('load',Game.start);
+</script>
+
+</head>
+<!-- HEAD TAG ENDS HERE -->
+
+<!-- BODY TAG STARTS HERE-->
+<body>
+<link rel="stylesheet" type="text/css" href="css/utility.css">
+<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+<!--<link rel="stylesheet" type="text/css" href="css/map1/game.css">-->
+<style type="text/css" media="screen">
+  #cr-stage {
+     margin-left: 300px;
+     border: 2px solid black;
+     border-radius: 4px 0 4px 0;
+  }
+</style>
+
+<audio autoplay>
+  <source src="res/109 Route 29.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div id="cr-stage"></div>
+
+<div id="messageBox"></div><!--
+  <button id="enterbtn" onclick="loadEnter()" style="margin-left: 620px;">Enter</button>
+  <div id="clearMSGBox" onclick="clearMSGBox()"> Clear </div>-->
+</body>
+</html>
+
+

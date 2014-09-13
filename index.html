@@ -1,75 +1,126 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Demo</title>
-<!--Uniform Scripts-->
-<script src="lib/crafty.js"></script><noscript>You need to have JavaScript enabled in order to play this game.</noscript>
-<script src="lib/jquery.js"></script>
-<script src="main.js"></script>
-<script src="loader.js"></script>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <script src="js/vendor/modernizr.js"></script>
+ 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+     
+ 
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="nav-bar right">
+       <ul class="button-group">
+         <!--<li><a href="#" class="button">Link 1</a></li>
+         <li><a href="#" class="button">Link 2</a></li>
+         <li><a href="#" class="button">Link 3</a></li>
+         <li><a href="#" class="button">Link 4</a></li> -->
+        </ul>
+      </div>
+      <h1 id="cottonballs">Pokemon Spirit. <small>It's a dumb name for a good game.</small></h1>
+      <hr/>
+    </div>
+  </div>
+ 
+ 
+  <div class="row">
+ 
+     
+    <div class="large-9 columns" role="content">
+ 
+      <article> 
+        <h3><a href="#">We have an ICON NOW.</a></h3>
+        <h6>Written by <a href="http://davidawad.github.io">David Awad</a> on August 12, 2012.</h6>
+ 
+        <div class="row">
+          <div class="large-6 columns">
+            <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
 
-<!--Map Specific Scripts-->
-<script src="src/map1/scene_map1.js"></script>
-<script src="lib/map1/components_try.js"></script>
+            <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+          </div>
+          <div class="large-6 columns">
+            <img src="img/dumbname.jpg"/>
+          </div>
+        </div>
+ 
+        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+ 
+        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+      </article> 
+      <hr/>
+ 
+      <article>
+        <h3><a href="#">I dont want this to be open source!</a></h3>
+        <h6>Written by <a href="#">Deep Ode</a> on August 12, 2012.</h6>
+ 
+        <div class="row">
+          <div class="large-6 columns">
+            <p>Bacon.</p>
 
-<!--Local utility function script-->
-<script>
-
-  function loadEnter() {
-	putMessage("X Greed Box: "+getGreedValue(pl.x)+ "<br>Y Greed Box: "+getGreedValue(pl.y));
-  }
-  function clearMSGBox() {
-    document.getElementById("messageBox").innerHTML = "";
-  }
-  function putMessage(message, id) {
-    if (id === undefined) {
-      id = "messageBox";
-    }
-    document.getElementById(id).innerHTML = message;
-    setScrollBarAtBottom();
-  }
-  function setScrollBarAtBottom() {
-    var div = $("#messageBox");
-    div.scrollTop( div.get(0).scrollHeight ); //Thanks to stackoverflow for this :)! 
-  }
-  function getGreedValue(axeis) {
-    var greedBox =  Math.round(parseInt(axeis/32,10));
-	return greedBox;
-  }
-</script>
-
-<script>
-   //initalizes the game
-   window.addEventListener('load',Game.start);
-</script>
-
-</head>
-<!-- HEAD TAG ENDS HERE -->
-
-<!-- BODY TAG STARTS HERE-->
-<body>
-<link rel="stylesheet" type="text/css" href="css/utility.css">
-<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
-<!--<link rel="stylesheet" type="text/css" href="css/map1/game.css">-->
-<style type="text/css" media="screen">
-  #cr-stage {
-     margin-left: 300px;
-     border: 2px solid black;
-     border-radius: 4px 0 4px 0;
-  }
-</style>
-
-<audio autoplay>
-  <source src="res/109 Route 29.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<div id="cr-stage"></div>
-
-<div id="messageBox"></div><!--
-  <button id="enterbtn" onclick="loadEnter()" style="margin-left: 620px;">Enter</button>
-  <div id="clearMSGBox" onclick="clearMSGBox()"> Clear </div>-->
-</body>
+            <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+          </div>
+          <div class="large-6 columns">
+            <img src="http://placehold.it/400x240&text=[img]"/>
+          </div>
+        </div>
+ 
+        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+ 
+        <p>This is where i urducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+      </article>
+    </div>
+ 
+    <aside class="large-3 columns">
+ 
+      <h5>Categories</h5>
+      <ul class="side-nav">
+        <li><a href="#">News</a></li>
+        <li><a href="#">Code</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Fun</a></li>
+        <li><a href="#">Weasels</a></li>
+      </ul>
+ 
+      <div class="panel">
+        <h5>Want to contribute? </h5>
+        <p>we're currently looking for developers and artists. Specifcally anyone with experience in crafty or javascript!</p>
+        <a href="https://plus.google.com/communities/113605802258906156749">Check us out! →</a> <!-- community link here-->
+      </div>
+    </aside>     
+  </div> 
+   
+ 
+ 
+   
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr/>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+        
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>
-
-

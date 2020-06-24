@@ -2,6 +2,7 @@ UPDATE (on 24th June, 2020 by DeepOde) : This was a project I was working on whe
 
 However since all remanining of us were at crucial age that time, we all had other commitments and one-by-one people had to leave the project. One day, we as team decided to discontinue this project. However I still have code that I wrote during that period, which I've uploaded here. Although we didn't make anything fancy, we learned alot about programming and how to work in a team. The project also made us realise that we had a taken a project bigger than our capabilities at those times, nevertheless the expereince and teaching from this project were worth it. ~DeepOde
 
+--- <br />
 PokemonCloud <br />
 ============
 

@@ -1,0 +1,25 @@
+/* if DamageClass = 0 i.e. other (and therefore power = 0 actually "-") 
+   then effect triggers 100% regards less what its effect accuracy says.
+*/
+Burn 4
+Freeze 3
+Paralyze 1
+Traps 8
+Poison 5
+Sleep 2
+Confusion 6
+Disable 13
+Leech Seed 18
+Tri Attack, teleknsis, smack down -1
+Drains 1/4 hp while asleep 9
+Raise evasness and removes immunity of ghost types 17
+Persih song 20
+Attrack 7
+Drowsy 14
+Torment 12
+ingrain 21
+embargo (not use of item & therefore fling) 19
+heal block 15
+
+
+
